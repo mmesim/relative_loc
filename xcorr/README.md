@@ -17,7 +17,7 @@ Structure: directoryName/StationName/sacfiles [Similar to `example` directory]
 
 `StartTime`: Event Origin time
 
-`End Time`: 60-90 seconds or more depending on the event. 
+`EndTime`: 60-90 seconds or more depending on the event. 
 
 `Header`: Should include P and S picks
 
