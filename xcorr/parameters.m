@@ -2,7 +2,7 @@
 %                                                                         % 
 % ------------------  M.Mesimeri 04/2020  ---------------------------------
 %               University of Utah seismograph Stations                   %
-%                      maria.mesimeri@utah.edu                            %
+%                      maria.mesimeri@sed.ethz.ch                         %
 %--------------------------------------------------------------------------
 %path to waveforms
 mydata='example'; 
