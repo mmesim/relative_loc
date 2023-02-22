@@ -21,7 +21,7 @@ P_Apick_win=0.9;           %Window after P arrival [in sec]
 S_Apick_win=1.9;           %Window after S arrival [in sec] 
 %--------------------------------------------------------------------------
 %----------------- Output Files parameters --------------------------------
-cc_thres=0.0;              %Minimum CC value for both P and S [0-1]
+cc_thres=0.8;              %Minimum CC value for both P and S [0-1]
 obs_thres=0;               %Minimum observations for each event pair
 fhypodd='hypoDD.cc';       %Filename for hypoDD cc file
 fgrowclust='growclust.cc'; %Filename for Growclust  cc file

@@ -13,7 +13,7 @@ addpath(genpath(pdir)); %add all *.m scripts to path
 [stations,dtE,dtN,dtZ]=my_setup(workers,mydata);
 %--------------------------------------------------------------------------
 %% 01. Load data (Sac files)
-for i=1:length(stations) %loop through stations
+for i=1%:length(stations) %loop through stations
 disp(stations(i))    
 disp('Loading files..')
 [yN,yE,yZ,headerN,headerE,headerZ,idZ,idE,idN]=my_loadfiles(mydata,stations{i,1});
