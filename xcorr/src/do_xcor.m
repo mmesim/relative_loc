@@ -5,7 +5,7 @@ function npairs=do_xcor(y,delta,picks,pairs,id,sta_id)
 
 parfor k=1:length(pairs(:,1))
     
- if length(y{1,pairs(k,1)}) == length(y{1,pairs(k,1)})
+ if length(y{1,pairs(k,1)}) == length(y{1,pairs(k,2)})
     
     
 %Correlation
