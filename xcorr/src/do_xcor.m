@@ -4,6 +4,10 @@ function npairs=do_xcor(y,delta,picks,pairs,id,sta_id)
 
 
 parfor k=1:length(pairs(:,1))
+    
+ if len(y{1,pairs(k,1)}) == len(y{1,pairs(k,1)})
+    
+    
 %Correlation
 %-----------------------------------------    
 [cc,lags]=xcorr(y{1,pairs(k,1)},y{1,pairs(k,2)},'coeff');
@@ -18,5 +22,10 @@ ndelay=picks(pairs(k,1))+delay-picks(pairs(k,2))
 % save correlations and delays for each pair
 npairs(k,:)=[id(pairs(k,1)) id(pairs(k,2)) ccm ndelay sta_id];
 
-end
-end
+else
+npairs(k,:)=[id(pairs(k,1)) id(pairs(k,2)) 0 0 sta_id];
+
+ end %end if 
+
+ end %parfor
+end %function
