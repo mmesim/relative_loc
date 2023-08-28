@@ -7,7 +7,7 @@ for j=1:length(y)
 if header(1).KCMPNM(3)=='Z'
 start=round((header(j).A-pick_Bwin)./header(1).DELTA); %start before pick
 stop=round((header(j).A+pick_Awin)./header(1).DELTA); %window after pick
-elseif header(1).KCMPNM(3)=='E' || header(1).KCMPNM(3)=='N'   
+elseif header(1).KCMPNM(3)=='E' || header(1).KCMPNM(3)=='N' || header(1).KCMPNM(3)=='1' || header(1).KCMPNM(3)=='2'  
 start=round((header(j).T0-pick_Bwin)./header(1).DELTA); %start before pick
 stop=round((header(j).T0+pick_Awin)./header(1).DELTA); %window after pick
 end
